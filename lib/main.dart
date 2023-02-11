@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:airplaine/welcome_page.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+const d_red = Color(0xFFE9717D);
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +15,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    /*return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -26,10 +31,18 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
-  }
+  }*/
+
+      return const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Animation',
+        home: WelcomePage(),
+      );
+
+}
 }
 
-class MyHomePage extends StatefulWidget {
+/*class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -112,4 +125,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
-}
+}*/
