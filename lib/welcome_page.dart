@@ -3,9 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:airplaine/delayed_animation.dart';
 import 'package:airplaine/main.dart';
 
-import 'listeAeroport.dart';
-
-
+import 'liste_aeroport.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -26,14 +24,14 @@ class WelcomePage extends StatelessWidget {
                 delay: 1500,
                 child: SizedBox(
                   height: 170,
-                  child: Image.asset('assets/images/airplane.png'),
+                  child: Image.asset('images/airplane.png'),
                 ),
               ),
               DelayedAnimation(
                 delay: 2500,
                 child: SizedBox(
                   height: 400,
-                  child: Image.asset('assets/images/men.jpg'),
+                  child: Image.asset('images/men.jpg'),
                 ),
               ),
               DelayedAnimation(
@@ -67,7 +65,7 @@ class WelcomePage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => listeAeroport(),
+                          builder: (context) => AirportList(),
                         ),
                       );
                     },
