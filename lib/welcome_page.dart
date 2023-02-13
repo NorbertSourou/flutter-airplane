@@ -24,14 +24,15 @@ class WelcomePage extends StatelessWidget {
                 delay: 1500,
                 child: SizedBox(
                   height: 170,
-                  child: Image.asset('images/airplane.png'),
+                  child: Text('SKYTRACK',
+                      style: GoogleFonts.montserrat(fontSize: 25)),
                 ),
               ),
               DelayedAnimation(
                 delay: 2500,
                 child: SizedBox(
-                  height: 400,
-                  child: Image.asset('images/men.jpg'),
+                  height: 500,
+                  child: Image.asset('images/men.png'),
                 ),
               ),
               DelayedAnimation(
@@ -42,7 +43,7 @@ class WelcomePage extends StatelessWidget {
                     bottom: 20,
                   ),
                   child: Text(
-                    "Get fitter, stronger, and embrasse a helthier lifestyle",
+                    "",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
                       color: Colors.grey,
@@ -60,7 +61,7 @@ class WelcomePage extends StatelessWidget {
                         backgroundColor: d_red,
                         shape: const StadiumBorder(),
                         padding: const EdgeInsets.all(13)),
-                    child: const Text('GET STARTED'),
+                    child: const Text('Commencer'),
                     onPressed: () {
                       Navigator.push(
                         context,
