@@ -43,6 +43,10 @@ dependencies:
   date_time_picker:
   flutter_localization:
   intl:
+  http:
+  google_maps_flutter:
+  flutter_polyline_points:
+  location:
 
 dev_dependencies:
   flutter_test:
