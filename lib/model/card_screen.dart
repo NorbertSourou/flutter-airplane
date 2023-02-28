@@ -16,7 +16,7 @@ class CardScreen extends StatefulWidget {
 }
 
 class _CardScreenState extends State<CardScreen> {
-  static LatLng _center = LatLng(19.0759837, 72.8776559);
+  static LatLng _center = const LatLng(19.0759837, 72.8776559);
 
   List<LatLng> latLen = [
     // LatLng(1676245034,  33.9455),
